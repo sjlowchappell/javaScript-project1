@@ -4,7 +4,7 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 
 /* Typography */
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, li, figure, figcaption {
     padding: 0;
     margin: 0;
 
@@ -20,7 +20,7 @@ h1 {
 /* General Styles */
 
 .wrapper {
-    max-width: 1080px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -39,3 +39,20 @@ header {
     height: 100vh;
 }
 
+/* Flexbox */
+.questionContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.answerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+figure {
+    padding: 10px;
+}
