@@ -30,6 +30,17 @@ h1 {
     font-family: 'Shadows Into Light Two', cursive;
 }
 
+h2 {
+    font-size: 3rem;    
+    font-family: 'Shadows Into Light Two', cursive;
+}
+
+figcaption {
+    font-size: 2rem;
+    margin: 20px 0px;
+    font-family: 'Lato', sans-serif;
+}
+
 
 /* General Styles */
 
@@ -44,13 +55,20 @@ img {
 
 header {
     height: 100vh;
-    background: url(../assets/headerImg.jpg);
+    background: url(../assets/rsz_2headerimg-min.jpg);
     background-color: rgb(170, 165, 165);
 	background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
+    text-align: center;
+}
+
+body {
+    /* background: url(../assets/palm-leaf.png); */
+    background: url(../assets/tree_bark.png);
+    background-attachment: fixed;
 }
 
 /* Flexbox */
@@ -77,10 +95,25 @@ section {
 }
 
 .unSelected {
-    filter: opacity(.4);
+    filter: brightness(30%);
 }
-
 
 figure {
     padding: 10px;
+}
+
+.hikeSubmit {
+    text-align: center;
+}
+
+/* input[type=radio] {
+    display: none;
+} */
+
+a {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    padding-top: 500px;
+
 }
