@@ -15,99 +15,129 @@
             <a href="#quizStart">Take the Quiz</a>
         </div>
     </header>
+
+
+    <!-- Next step, update so that this is accessible by creating a form and doing labels/inputs instead of label and figcaptions -->
+<!-- <input id="flat" type="radio">
+    <label for="flat">
+        <img src="./assets/rsz_flatPic.jpg" alt="">
+        <p>As flat as possible</p>
+    </label> -->
         
     <section id="quizStart">
-        <div class="wrapper quiz">
+        <form action="" class="wrapper quiz">
             <!-- First Question -->
             <h2>1) Where are you willing to travel to start your Thru-hike?</h2>
             <div class="questionContainer questionOne"> 
-                <figure class="answerContainer answerOne">
+               
+                <input id="northAmerica" type="radio">
+                <label for="northAmerica" class="answerContainer answerOne">
                     <img src="./assets/rsz_northamericapic.jpg" alt="">
-                    <figcaption>North America</figcaption>
-                </figure>
-                <figure class="answerContainer answerTwo">
+                    <p>North America</p>
+                </label>
+
+                <input id="international" type="radio">
+                <label for="international" class="answerContainer answerTwo">
                     <img src="./assets/rsz_internationalpic.jpg" alt="">
-                    <figcaption>Outside of North America</figcaption>
-                </figure>
-                <figure class="answerContainer answerThree">
-                    <img src="./assets/rsz_anywherepic.jpg" alt="">
-                    <figcaption>Anywhere</figcaption>
-                </figure>
+                    <p>Outside of North America</p>
+                </label>
+
+                <label id="anywhere" class="answerContainer answerThree">
+                    <img for="anywhere" src="./assets/rsz_anywherepic.jpg" alt="">
+                    <p>Anywhere</p>
+                </label>
             </div>
             
             <h2>2) How remote would you like to be?</h2>
-            <div class="questionContainer questionTwo"> 
-                <figure class="answerContainer answerOne">
+            <div class="questionContainer questionTwo">
+
+                <input id="town" type="radio"> 
+                <label for="town" class="answerContainer answerOne">
                     <img src="./assets/rsz_townpic.jpg" alt="">
-                    <figcaption>Close to Town</figcaption>
-                </figure>
-                <figure class="answerContainer answerTwo">
+                    <p>Close to Town</p>
+                </label>
+
+                <input id="roads" type="radio">
+                <label for="roads" class="answerContainer answerTwo">
                     <img src="./assets/rsz_roadpic.jpg" alt="">
-                    <figcaption>Happy to see roads</figcaption>
-                </figure>
-                <figure class="answerContainer answerThree">
+                    <p>Happy to see roads</p>
+                </label>
+
+                <input id="remote" type="radio">
+                <label for="remote" class="answerContainer answerThree">
                     <img src="./assets/rsz_1remotepic.jpg" alt="">
-                    <figcaption>I hope to never see town</figcaption>
-                </figure>
+                    <p>I hope to never see town</p>
+                </label>
             </div>
     
             <h2>3) What difficulty level are you looking for?</h2>
             <div class="questionContainer questionThree"> 
-                <figure class="answerContainer answerOne">
+                <input id="easy" type="radio">
+                <label for="easy" class="answerContainer answerOne">
                     <img src="./assets/rsz_easypic_81230_pm.jpg" alt="">
-                    <figcaption>Easy</figcaption>
-                </figure>
-                <figure class="answerContainer answerTwo">
+                    <p>Easy</p>
+                </label>
+
+                <input id="medium" type="radio">
+                <label for="medium" class="answerContainer answerTwo">
                     <img src="./assets/rsz_2mediumpic.jpg" alt="">
-                    <figcaption>Medium</figcaption>
-                </figure>
-                <figure class="answerContainer answerThree">
+                    <p>Medium</p>
+                </label>
+
+                <input id="hard" type="radio">
+                <label for="hard" class="answerContainer answerThree">
                     <img src="./assets/rsz_hardPic.jpg" alt="">
-                    <figcaption>Hard</figcaption>
-                </figure>
+                    <p>Hard</p>
+                </label>
             </div>
     
             <h2>4) What elevation levels would you prefer?</h2>
             <div class="questionContainer questionFour"> 
-                <!-- <input id="flat" type="radio">
-                <label for="flat">
+                <input id="flat" type="radio">
+                <label for="flat" class="answerContainer answerOne">
                     <img src="./assets/rsz_flatPic.jpg" alt="">
                     <p>As flat as possible</p>
-                </label> -->
-                <figure class="answerContainer answerOne">
-                    <img src="./assets/rsz_flatPic.jpg" alt="">
-                    <figcaption>As flat as possible</figcaption>
-                </figure>
-                <figure class="answerContainer answerTwo">
+                </label>
+
+                <input id="hilly" type="radio">
+                <label for="hilly" class="answerContainer answerTwo">
                     <img src="./assets/rsz_hillypic_81343_pm.jpg" alt="">
-                    <figcaption>Some hills are ok</figcaption>
-                </figure>
-                <figure class="answerContainer answerThree">
+                    <p>Some hills are ok</p>
+                </label>
+
+                <input id="peaks" type="radio">
+                <label for="peaks" class="answerContainer answerThree">
                     <img src="./assets/rsz_mountainspic.jpg" alt="">
-                    <figcaption>Let's bag some peaks</figcaption>
-                </figure>
+                    <p>Let's bag some peaks</p>
+                </label>
             </div>
     
             <h2>5) What level of rain are you comfortable with?</h2>
-            <div class="questionContainer questionFive"> 
-                <figure class="answerContainer answerOne">
+            <div class="questionContainer questionFive">
+                
+                <input id="sunny" type="radio">
+                <label for="sunny" class="answerContainer answerOne">
                     <img src="./assets/rsz_sunnypic.jpg" alt="">
-                    <figcaption>As sunny as possible</figcaption>
-                </figure>
-                <figure class="answerContainer answerTwo">
+                    <p>As sunny as possible</p>
+                </label>
+
+                <input id="bitOfRain" type="radio">
+                <label for="bitOfRain" class="answerContainer answerTwo">
                     <img src="./assets/rsz_somerainpic.jpg" alt="">
-                    <figcaption>A bit of rain doesn't hurt</figcaption>
-                </figure>
-                <figure class="answerContainer answerThree">
+                    <p>A bit of rain doesn't hurt</p>
+                </label>
+
+                <input id="pouring" type="radio">
+                <label for="pouring" class="answerContainer answerThree">
                     <img src="./assets/rsz_rainPic.jpg" alt="">
-                    <figcaption>Let it pour</figcaption>
-                </figure>
+                    <p>Let it pour</p>
+                </label>
             </div>
 
-            <button class="hikeSubmit">Find Your Hike</button>
-        </div>
 
-
+            <input id="finalSubmit" class="hikeSubmit" type="submit" value="Find Your Hike">
+            <!-- <button class="hikeSubmit">Find Your Hike</button> -->
+        </form>
 
     </section>
 

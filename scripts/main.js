@@ -154,7 +154,8 @@ $(function() {
 
 
     // When the user clicks the submit button, this function will add together all of the selected values and return the appropriate hike based on the added values
-    $('.hikeSubmit').on('click', function() {
+    $('.hikeSubmit').on('click', function(e) {
+        e.preventDefault();
         if ($('.quiz figure').last().hasClass('finalAnswer')) {
             $('.quiz figure').last().remove();
         }

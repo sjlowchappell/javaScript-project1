@@ -35,7 +35,7 @@ h2 {
     font-family: 'Shadows Into Light Two', cursive;
 }
 
-figcaption {
+p {
     font-size: 2rem;
     margin: 20px 0px;
     font-family: 'Lato', sans-serif;
@@ -98,7 +98,7 @@ section {
     filter: brightness(30%);
 }
 
-figure {
+label {
     padding: 10px;
 }
 
@@ -106,9 +106,9 @@ figure {
     text-align: center;
 }
 
-/* input[type=radio] {
+input[type=radio] {
     display: none;
-} */
+}
 
 a {
     color: white;
